@@ -1,0 +1,10 @@
+:root {
+    --color-text: #000000;
+    --color-green-esmerald: #00674F;
+    --color-green: #50C878;
+    --color-menu: #FFFFFF;
+    --color-white: #FFFFFF;
+    --color-gray: #D9D9D9;
+    --color-background-title: rgba(0,0,0,0.1);
+    --color-background-green-light: rgba(80, 200, 120, 0.2);
+}

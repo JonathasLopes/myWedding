@@ -1,0 +1,24 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 35px;
+    font-family: 'Great Vibes', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-white);
+    background-color: var(--color-green-esmerald);
+    font-size: 22px;
+}
+
+.logo-footer path {
+    fill: var(--color-white);
+}
+
+.logo-footer line {
+    stroke: var(--color-white);
+}
+
+.space-footer {
+    width: 40px;
+}

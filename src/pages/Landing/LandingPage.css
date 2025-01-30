@@ -1,0 +1,144 @@
+.container-landing {
+    padding-top: 60px;
+}
+
+.img-main {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray);
+    background-image: url("../../assets/img/genericPhoto1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.border-container {
+    overflow: hidden;
+    margin-top: -70px;
+    height: 30px;
+    width: 100%;
+}
+
+.border-radius-green {
+    background-color: var(--color-green-esmerald);
+    border-radius: 1000px 1000px 0px 0px;
+    width: 100%;
+    height: 1000px;
+}
+
+.img-main h1 {
+    font-family: 'Great Vibes', serif;
+    font-size: 100px;
+    color: var(--color-white);
+    background-color: var(--color-background-title);
+    padding: 40px;
+}
+
+.container-infos {
+    color: var(--color-white);
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+    font-family: "Lobster", serif;
+    font-style: normal;
+    background: var(--color-green-esmerald);
+    width: 100%;
+}
+
+.container-infos h1 {
+    font-size: 60px;
+}
+
+.container-infos h3,
+#gifts-container h3 {
+    font-size: 30px;
+}
+
+.bar-horizontal {
+    width: 120px;
+    border: 1px solid var(--color-white);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.container-msg {
+    background-color: var(--color-white);
+    text-align: center;
+    padding: 25px 160px;
+}
+
+.container-msg h3 {
+    font-size: 30px;
+}
+
+.container-msg p {
+    font-size: 16px;
+}
+
+.img-secondary {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--color-gray);
+    background-image: url("../../assets/img/genericPhoto2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -180px;
+}
+
+#gifts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 100px 60px 100px;
+    background: var(--color-background-green-light);
+    text-align: center;
+}
+
+#gifts-container h3 {
+    margin-bottom: 5px;
+}
+
+.btn-gifts {
+    border: 1px solid var(--color-green);
+    padding: 8px 10px;
+    color: var(--color-green);
+    border-radius: 6px;
+    transition: color 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 30px 0px;
+}
+
+.btn-gifts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--color-white);
+    transition: left 0.4s ease-in-out, background 0.4s ease-in-out;
+    z-index: -1;
+  }
+  
+  .btn-gifts:hover {
+    color: var(--color-white);
+  }
+  
+  .btn-gifts:hover::before {
+    left: 0;
+    background: var(--color-green);
+  }
+
+.text-bible {
+    font-style: italic;
+}
+
+.text-bible {
+    
+}
