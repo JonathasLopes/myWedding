@@ -1,0 +1,179 @@
+@media (max-width: 768px) {
+    .img-main {
+        height: 600px;
+    }
+
+    .nav-menu {
+        height: 72px;
+    }
+
+    .nav-wedding,
+    .div-invisble,
+    .footer-container .logo-footer,
+    .footer-container .space-footer{
+        display: none;
+    }
+
+    .footer-container {
+        justify-content: center;
+        padding: 5px 0px;
+    }
+
+    .img-main h1 {
+        font-size: 55px;
+        padding: 20px;
+    }
+
+    .bar-horizontal {
+        width: 100px;
+    }
+
+    .img-main h1 {
+        font-size: 42px;
+        padding: 10px;
+        margin-top: -35px;
+    }
+
+    .container-infos {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .container-infos h1 {
+        font-size: 35px;
+    }
+
+    .container-infos p,
+    .container-msg p,
+    #gifts-container p {
+        font-size: 12px;
+    }
+
+    .container-infos h3,
+    #gifts-container h3,
+    .container-msg h3 {
+        font-size: 20px;
+    }
+
+    .container-msg {
+        padding: 5px 10px 10px;
+    }
+
+    .img-secondary {
+        background-position: center;
+        height: 250px;
+    }
+
+    #gifts-container {
+        padding: 10px 25px 25px 25px;
+    }
+
+    .btn-gifts {
+        font-size: 16px;
+        margin: 15px 0px;
+    }
+
+    .footer-container h4 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 425px) {
+    .img-main {
+        height: 400px;
+    }
+
+    .bar-horizontal {
+        width: 100px;
+    }
+
+    .img-main h1 {
+        font-size: 42px;
+        padding: 10px;
+        margin-top: -35px;
+    }
+
+    .container-infos {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .container-infos h1 {
+        font-size: 35px;
+    }
+
+    .container-infos p,
+    .container-msg p,
+    #gifts-container p {
+        font-size: 12px;
+    }
+
+    .container-infos h3,
+    #gifts-container h3,
+    .container-msg h3 {
+        font-size: 20px;
+    }
+
+    .container-msg {
+        padding: 5px 10px 10px;
+    }
+
+    .img-secondary {
+        background-position: center;
+        height: 250px;
+    }
+
+    #gifts-container {
+        padding: 10px 15px 25px 15px;
+    }
+
+    .btn-gifts {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        padding: 2px 0px;
+    }
+
+    .footer-container h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+    .img-main {
+        height: 380px;
+    }
+
+    .bar-horizontal {
+        width: 80px;
+    }
+
+    .img-main h1 {
+        font-size: 40px;
+        margin-top: -40px;
+    }
+
+    .container-infos p,
+    .container-msg p,
+    #gifts-container p {
+        font-size: 10px;
+    }
+
+    .container-infos h3,
+    #gifts-container h3,
+    .container-msg h3 {
+        font-size: 18px;
+    }
+
+    .img-secondary {
+        background-position: center;
+        height: 250px;
+    }
+
+    #gifts-container {
+        padding: 20px 15px 35px 15px;
+    }
+
+    .footer-container h4 {
+        font-size: 15px;
+    }
+}
