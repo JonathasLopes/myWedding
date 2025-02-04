@@ -124,21 +124,17 @@
     background: var(--color-white);
     transition: left 0.4s ease-in-out, background 0.4s ease-in-out;
     z-index: -1;
-  }
-  
-  .btn-gifts:hover {
+}
+
+.btn-gifts:hover {
     color: var(--color-white);
-  }
-  
-  .btn-gifts:hover::before {
+}
+
+.btn-gifts:hover::before {
     left: 0;
     background: var(--color-green);
-  }
-
-.text-bible {
-    font-style: italic;
 }
 
 .text-bible {
-    
+    font-style: italic;
 }

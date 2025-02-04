@@ -1,0 +1,49 @@
+.container-confirm {
+    padding-top: 60px;
+}
+
+.container-invites {
+    background-color: var(--color-green-esmerald);
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.warn-confirm {
+    margin-bottom: 40px;
+    width: 800px;
+    text-align: center;
+}
+
+.container-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 600px;
+}
+
+.container-input input {
+    border: 1px solid var(--color-background-title);
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+.container-input button {
+    border: none;
+    position: absolute;
+    right: 10px;
+    border-left: 0px;
+    background: none;
+    padding: 12px;
+    border-radius: 0px 6px 6px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+}

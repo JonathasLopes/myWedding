@@ -15,6 +15,11 @@
   font-weight: bold;
 }
 
+.nav-link.active.confirm-menu {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
 .confirm-menu {
   border: 1px solid var(--color-green);
   padding: 8px 10px;
