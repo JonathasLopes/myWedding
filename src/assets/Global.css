@@ -42,3 +42,8 @@ a {
 .logo {
     color: var(--color-white);
 }
+
+ul {
+    list-style: none;
+    padding: 0px;
+}

@@ -1,10 +1,11 @@
 @media (max-width: 768px) {
     .img-main {
-        height: 600px;
+        height: 550px;
     }
 
     .nav-menu {
         height: 72px;
+        justify-content: space-between;
     }
 
     .nav-wedding,
@@ -19,17 +20,12 @@
         padding: 5px 0px;
     }
 
-    .img-main h1 {
-        font-size: 55px;
-        padding: 20px;
-    }
-
     .bar-horizontal {
         width: 100px;
     }
 
     .img-main h1 {
-        font-size: 42px;
+        font-size: 60px;
         padding: 10px;
         margin-top: -35px;
     }
@@ -39,19 +35,19 @@
     }
 
     .container-infos h1 {
-        font-size: 35px;
+        font-size: 45px;
     }
 
     .container-infos p,
     .container-msg p,
     #gifts-container p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .container-infos h3,
     #gifts-container h3,
     .container-msg h3 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .container-msg {
@@ -60,7 +56,7 @@
 
     .img-secondary {
         background-position: center;
-        height: 250px;
+        height: 300px;
     }
 
     #gifts-container {
@@ -68,12 +64,12 @@
     }
 
     .btn-gifts {
-        font-size: 16px;
+        font-size: 20px;
         margin: 15px 0px;
     }
 
     .footer-container h4 {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
 
