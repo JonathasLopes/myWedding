@@ -5,6 +5,8 @@
     --color-menu: #FFFFFF;
     --color-white: #FFFFFF;
     --color-gray: #D9D9D9;
+    --color-red: #FF0000;
     --color-background-title: rgba(0,0,0,0.1);
+    --color-background-modal: rgba(0,0,0,0.4);
     --color-background-green-light: rgba(80, 200, 120, 0.2);
 }

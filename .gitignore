@@ -23,3 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 package-lock.json
+
+# Ignorar .npmrc localmente
+.npmrc
+
+.env
