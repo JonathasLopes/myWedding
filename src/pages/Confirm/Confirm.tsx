@@ -48,7 +48,7 @@ function Confirm() {
             <div className='container-invites'>
                 <div className='container-input'>
                     <input placeholder='Digite aqui seu nome...' value={search} onChange={e => setSearch(e.target.value)} />
-                    <button disabled={!search || search == ""} type='button' onClick={getByName}><FiSearch /></button>
+                    <button disabled={!search || search === ""} type='button' onClick={getByName}><FiSearch /></button>
                 </div>
                 <div className='container-collapse'>
                     {families.map((family, index) => {
