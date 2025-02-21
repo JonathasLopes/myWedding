@@ -42,7 +42,7 @@ function LandingPage() {
                 </div>
                 <p className='address-infos'>R. Manoel dos Santos, 263 - Meu Cantinho, Suzano</p>
                 <div className='map'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.019819205349!2d-46.328205924144704!3d-23.567731661827295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce706246a7ec85%3A0x72c4cf6703542265!2sR.%20Manoel%20dos%20Santos%2C%20263%20-%20Meu%20Cantinho%2C%20Suzano%20-%20SP%2C%2008664-635!5e0!3m2!1spt-BR!2sbr!4v1740164401828!5m2!1spt-BR!2sbr" width="600" height="450" loading="lazy"></iframe>
+                    <iframe title='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.019819205349!2d-46.328205924144704!3d-23.567731661827295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce706246a7ec85%3A0x72c4cf6703542265!2sR.%20Manoel%20dos%20Santos%2C%20263%20-%20Meu%20Cantinho%2C%20Suzano%20-%20SP%2C%2008664-635!5e0!3m2!1spt-BR!2sbr!4v1740164401828!5m2!1spt-BR!2sbr" width="600" height="450" loading="lazy"></iframe>
                 </div>
                 <p className='text-option'>Para quem mora em <b>SÃO PAULO</b>, recomendamos que optem no waze ou google maps, a opção pela Rod. Ayrton Senna/Rod. dos Trabalhadores. Mesmo que tenha pedágio, é uma rota mais tranquila para chegar ao local</p>
                 <Divisor1 className='divisor inverted' />
