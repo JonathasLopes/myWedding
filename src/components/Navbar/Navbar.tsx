@@ -8,15 +8,16 @@ function Navbar() {
 
     useEffect(() => {
         if (active === 0) {
-            window.scroll({top: 0, left: 0, behavior: 'smooth' });
+            window.scroll({ top: 0, left: 0, behavior: 'smooth' });
         }
-    }, [active])
+    }, [active]);
 
     return (
         <nav className="nav-wedding">
             <NavLink to="/" label="Início" identifier={0} active={active} setActive={setActive} />
-            <NavHashLink to="/#gifts-container" identifier={1} active={active} setActive={setActive} label="Lista de Presentes" />
-            <NavLink to="/confirm" label="Confirmar Presença" identifier={2} active={active} setActive={setActive} />
+            <NavHashLink to="/#our-history-container" identifier={1} active={active} setActive={setActive} label="Nossa História" />
+            <NavHashLink to="/#gifts-container" identifier={2} active={active} setActive={setActive} label="Lista de Presentes" />
+            <NavLink to="/confirm" label="Confirmar Presença" identifier={3} active={active} setActive={setActive} />
         </nav>
     );
 };

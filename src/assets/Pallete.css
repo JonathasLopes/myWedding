@@ -1,12 +1,35 @@
 :root {
+    /*text-color*/
     --color-text: #000000;
-    --color-green-esmerald: #00674F;
-    --color-green: #50C878;
-    --color-menu: #FFFFFF;
+    --color-text-green: #00674F;
+    --color-text-green-light: #50C878;
+    --color-text-white: #FFFFFF;
+
+    /*background-color*/
+    --color-background-green: #00674F;
+    --color-background-green-medium: #50C878;
+    --color-background-green-light: #B0C8C2;
+    --color-background-white: #FFFFFF;
+    --color-background-img-gray: #D9D9D9;
+    --color-background-img-gray-dark: #919191;
+    --color-background-img-gray-medium: #BEBEBE;
+    --color-background-title-gray: rgba(0,0,0,0.11);
+    --color-background-select-green: rgba(80, 200, 120, 0.48);
+    --color-background-black: #000000;
+
+    /*border-color*/
+    --color-border-gray: #4B4B4B;
+    --color-border-green-light: #50C878;
+    --color-border-green: #00674F;
+
+    /*shadow-color*/
+    --color-shadow: rgba(0, 0, 0, 0.30);
+
+    /*object-color*/
+    --color-check: #D6D6D6;
+
+    /*default-color*/
+    --color-marsala: #581D22;
+    --color-esmerald: #00674F;
     --color-white: #FFFFFF;
-    --color-gray: #D9D9D9;
-    --color-red: #FF0000;
-    --color-background-title: rgba(0,0,0,0.1);
-    --color-background-modal: rgba(0,0,0,0.4);
-    --color-background-green-light: rgba(80, 200, 120, 0.2);
 }

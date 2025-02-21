@@ -1,0 +1,26 @@
+.card-counting-container {
+    background-color: var(--color-background-white);
+    border: 1px solid var(--color-border-green-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 0px 20px;
+    height: 160px;
+}
+
+.divisor-card {
+    width: 100px;
+}
+
+.timer-card {
+    color: var(--color-text-green-light);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.moment-card {
+    color: var(--color-text);
+}
