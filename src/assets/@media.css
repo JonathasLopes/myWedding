@@ -39,13 +39,11 @@
     }
 
     .container-infos p,
-    .container-msg p,
-    #gifts-container p {
+    .container-msg p {
         font-size: 14px;
     }
 
     .container-infos h3,
-    #gifts-container h3,
     .container-msg h3 {
         font-size: 22px;
     }
@@ -57,10 +55,6 @@
     .img-secondary {
         background-position: center;
         height: 300px;
-    }
-
-    #gifts-container {
-        padding: 10px 25px 25px 25px;
     }
 
     .btn-gifts {
@@ -97,13 +91,11 @@
     }
 
     .container-infos p,
-    .container-msg p,
-    #gifts-container p {
+    .container-msg p {
         font-size: 12px;
     }
 
     .container-infos h3,
-    #gifts-container h3,
     .container-msg h3 {
         font-size: 20px;
     }
@@ -115,10 +107,6 @@
     .img-secondary {
         background-position: center;
         height: 250px;
-    }
-
-    #gifts-container {
-        padding: 10px 15px 25px 15px;
     }
 
     .btn-gifts {
@@ -149,13 +137,11 @@
     }
 
     .container-infos p,
-    .container-msg p,
-    #gifts-container p {
+    .container-msg p {
         font-size: 10px;
     }
 
     .container-infos h3,
-    #gifts-container h3,
     .container-msg h3 {
         font-size: 18px;
     }
@@ -163,10 +149,6 @@
     .img-secondary {
         background-position: center;
         height: 250px;
-    }
-
-    #gifts-container {
-        padding: 20px 15px 35px 15px;
     }
 
     .footer-container h4 {

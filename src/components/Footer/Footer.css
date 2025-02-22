@@ -1,24 +1,16 @@
 .footer-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 35px;
+    justify-content: center;
+    padding: 20px 0px;
     font-family: 'Great Vibes', serif;
     font-style: normal;
     font-weight: 400;
-    color: var(--color-white);
-    background-color: var(--color-green-esmerald);
-    font-size: 22px;
+    color: var(--color-text-white);
+    background-color: var(--color-background-green);
+    font-size: 25px;
 }
 
-.logo-footer path {
-    fill: var(--color-white);
-}
-
-.logo-footer line {
-    stroke: var(--color-white);
-}
-
-.space-footer {
-    width: 40px;
+.footer-container h4 {
+    margin: 0px;
 }

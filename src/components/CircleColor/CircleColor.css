@@ -1,0 +1,30 @@
+.circle-color-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+.circle-color-container span {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.circle.marsala {
+    background-color: var(--color-marsala);
+}
+
+.circle.esmerald {
+    background-color: var(--color-esmerald);
+}
+
+.circle.white {
+    background-color: var(--color-white);
+}

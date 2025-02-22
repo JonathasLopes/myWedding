@@ -4,6 +4,8 @@ import CardCounting from '../../components/CardCounting/CardCounting';
 import { useEffect, useState } from 'react';
 import { ReactComponent as Divisor2 } from '../../assets/img/divisor2.svg';
 import { calculateTimeLeft } from '../../helpers/CalculateTimeLeft';
+import CircleColor from '../../components/CircleColor/CircleColor';
+import GalleryPhotos from '../../components/GalleryPhotos/GalleryPhotos';
 
 function LandingPage() {
     const [days, setDays] = useState<number>(0);
@@ -57,13 +59,35 @@ function LandingPage() {
             <div className='colors-container'>
                 <Divisor1 className='divisor' />
                 <h3>Cores Proibidas</h3>
+                <p>Não usar estas cores, pois serão cores que somente padrinhos, noivos e pais podem usar neste dia!</p>
+                <div className='colors-circle-container'>
+                    <Divisor2 className='divisor-colors' />
+                    <CircleColor color='marsala' title='Marsala' />
+                    <CircleColor color='esmerald' title='Esmeralda' />
+                    <CircleColor color='white' title='Branco' />
+                    <Divisor2 className='divisor-colors' />
+                </div>
+                <div id="gifts-container" className='gifts-container'>
+                    <h3>Lista de Presentes</h3>
+                    <p>Clique no botão abaixo para acessar nossa lista de presentes!</p>
+                    <a href='https://site.lejour.com.br/bihejoh2025' className='btn-gifts'>Ir para Lista de Presentes</a>
+                    <p className='text-bible'><span>Eclesiastes 4:9-10 - </span>Melhor é serem dois do que um, porque têm melhor recompensa pelo seu trabalho. Pois se um cair, o outro levanta o seu companheiro.</p>
+                </div>
                 <Divisor1 className='divisor inverted' />
             </div>
-            <div id="gifts-container">
-                <h3>Nossa Lista de Presentes</h3>
-                <p>Ao clicar neste botão, você será redirecionado para o site da nossa lista de presentes!</p>
-                <a href='https://site.lejour.com.br/bihejoh2025' className='btn-gifts'>Ver Lista de Presentes</a>
-                <p className='text-bible'><span>Eclesiastes 4:9-10 - </span>Melhor é serem dois do que um, porque têm melhor recompensa pelo seu trabalho. Pois se um cair, o outro levanta o seu companheiro.</p>
+            <GalleryPhotos
+                isReverse={false}
+                images={
+                    [
+                        '/images/genericPhoto1.jpg',
+                        '/images/genericPhoto2.jpg',
+                    ]
+                }
+            />
+            <Divisor1 className='divisor' />
+            <div className='message-container'>
+                <h3>Escreva uma Mensagem</h3>
+
             </div>
         </div>
     )

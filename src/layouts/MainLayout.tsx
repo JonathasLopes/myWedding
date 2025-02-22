@@ -13,9 +13,7 @@ function MainLayout() {
                 <HamburgerNavbar />
                 <div className="div-invisble"></div>
             </div>
-            <div>
-                <Outlet />
-            </div>
+            <Outlet />
             <Footer />
         </div>
     )

@@ -43,11 +43,22 @@ const NavLink: React.FC<NavLinkProps> = ({ to, label, setActive, active, identif
 };
 
 const NavHashLink: React.FC<NavLinkProps> = ({ to, label, setActive, active, identifier }) => {
+    const scrollWithOffset = (element: HTMLElement): void => {
+        if (element && element instanceof HTMLElement) {
+            const offset = 70;
+            window.scrollTo({
+                top: element.offsetTop - offset,
+                behavior: 'smooth',
+            });
+        }
+    };
+
     return (
         <HashLink
             smooth
             onClick={() => setActive(identifier)}
             to={to}
+            scroll={scrollWithOffset}
             className={`nav-link ${active === identifier && "active"}`}
         >
             {label}

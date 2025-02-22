@@ -16,6 +16,7 @@
     --color-background-title-gray: rgba(0,0,0,0.11);
     --color-background-select-green: rgba(80, 200, 120, 0.48);
     --color-background-black: #000000;
+    --color-background-black-modal: rgba(0, 0, 0, 0.8);
 
     /*border-color*/
     --color-border-gray: #4B4B4B;
@@ -24,6 +25,7 @@
 
     /*shadow-color*/
     --color-shadow: rgba(0, 0, 0, 0.30);
+    --color-shadow-white: rgba(255, 255, 255, 0.5);
 
     /*object-color*/
     --color-check: #D6D6D6;
