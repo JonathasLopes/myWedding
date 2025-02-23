@@ -280,5 +280,6 @@
 }
 
 .btn-send-message:disabled {
-    background-color: var(--color-background-green-light);
+    background-color: var( --color-background-green-light-disabled);
+    cursor: not-allowed;
 }

@@ -1,54 +1,55 @@
-.container-confirm {
-    padding-top: 60px;
-}
-
 .container-invites {
-    background-color: var(--color-green-esmerald);
-    padding: 20px 0px;
+    background-color: var(--color-background-green-light);
+    color: var(--color-text-green);
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
 }
 
-.warn-confirm {
-    margin-bottom: 40px;
-    width: 800px;
+.container-invites h3 {
+    margin: 0px;
+    font-size: 30px;
+}
+
+.container-invites p {
     text-align: center;
-    color: var(--color-red);
-}
-
-.container-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 600px;
-}
-
-.container-input input {
-    border: 1px solid var(--color-background-title);
-    border-radius: 6px;
-    font-size: 18px;
-    padding: 10px;
-    width: 100%;
-}
-
-.container-input button {
-    border: none;
-    position: absolute;
-    right: 10px;
-    border-left: 0px;
-    background: none;
-    padding: 12px;
-    border-radius: 0px 6px 6px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
     font-size: 16px;
+    width: 800px;
 }
 
-.container-collapse {
+.container-invites input {
+    width: 500px;
+    height: 35px;
+    border: 1px solid var(--color-border-gray);
+    border-radius: 6px;
+    background: none;
+    font-size: 18px;
+    padding: 0px 15px;
+    font-weight: 300;
+    font-family: 'Poppins', serif;
+    outline: none;
+    margin: 20px 0px;
+}
+
+.btn-search {
+    color: var(--color-text-white);
+    background-color: var(--color-background-green);
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    padding: 15px 100px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.btn-search:hover {
+    background-color: var(--color-background-green-dark);
+}
+
+.btn-search:disabled {
+    background-color: var( --color-background-green-light-disabled);
+    cursor: not-allowed;
 }
