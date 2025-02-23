@@ -24,7 +24,7 @@ function GalleryPhotos({ images, isReverse }: IGalleryPhotosProps) {
 
     return (
         <div className="gallery">
-            <div className={`gallery-track ${isReverse && "reverse"}`}>
+            <div className={`gallery-track ${isReverse ? "reverse" : ""}`}>
                 {[...images, ...images, ...images, ...images].map((src, index) => (
                     <img
                         key={index}

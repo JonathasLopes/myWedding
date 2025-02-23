@@ -12,6 +12,8 @@ function LandingPage() {
     const [hours, setHours] = useState<number>(0);
     const [minutes, setMinutes] = useState<number>(0);
     const [seconds, setSeconds] = useState<number>(0);
+    const [name, setName] = useState<string>("");
+    const [message, setMessage] = useState<string>("");
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -75,19 +77,33 @@ function LandingPage() {
                 </div>
                 <Divisor1 className='divisor inverted' />
             </div>
-            <GalleryPhotos
-                isReverse={false}
-                images={
-                    [
-                        '/images/genericPhoto1.jpg',
-                        '/images/genericPhoto2.jpg',
-                    ]
-                }
-            />
+            <div className='gallery-photos'>
+                <h3>Galeria de Fotos</h3>
+                <GalleryPhotos
+                    isReverse={false}
+                    images={
+                        [
+                            '/images/genericPhoto1.jpg',
+                            '/images/genericPhoto2.jpg',
+                        ]
+                    }
+                />
+            </div>
+
             <Divisor1 className='divisor' />
             <div className='message-container'>
                 <h3>Escreva uma Mensagem</h3>
-
+                <div className='inputs-container'>
+                    <div className='input-container'>
+                        <label>Nome:</label>
+                        <input onChange={e => setName(e.target.value)} />
+                    </div>
+                    <div className='input-container'>
+                        <label>Mensagem:</label>
+                        <textarea onChange={e => setMessage(e.target.value)} />
+                    </div>
+                </div>
+                <button disabled={name === "" || message === ""} className='btn-send-message'>Enviar</button>
             </div>
         </div>
     )

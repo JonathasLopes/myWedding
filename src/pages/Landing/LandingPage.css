@@ -48,7 +48,8 @@
 }
 
 .container-infos h3,
-.colors-container h3 {
+.colors-container h3,
+.gallery-photos h3 {
     font-weight: 200;
     margin: 10px 0px;
 }
@@ -101,7 +102,8 @@
 .container-infos h3,
 .colors-container h3,
 .container-msg h3,
-.message-containe h3 {
+.message-container h3,
+.gallery-photos h3 {
     font-size: 30px;
 }
 
@@ -203,4 +205,80 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    padding: 20px 0px 40px 0px;
+}
+
+.message-container h3 {
+    font-weight: 500;
+    margin: 5px 0px;
+}
+
+.gallery-photos {
+    width: 100%;
+}
+
+.gallery-photos h3 {
+    text-align: center;
+    color: var(--color-text-white);
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.input-container label {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 800px;
+    border: 1px solid var(--color-border-green);
+    border-radius: 6px;
+    height: 35px;
+    font-size: 18px;
+    padding: 0px 15px;
+    font-weight: 300;
+    font-family: 'Poppins', serif;
+}
+
+.input-container textarea {
+    resize: none;
+    width: 800px;
+    border: 1px solid var(--color-border-green);
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 10px 15px;
+    font-family: 'Poppins', serif;
+    height: 150px;
+    font-weight: 300;
+}
+
+.btn-send-message {
+    color: var(--color-text-white);
+    background-color: var(--color-background-green);
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    padding: 15px 100px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.btn-send-message:hover {
+    background-color: var(--color-background-green-dark);
+}
+
+.btn-send-message:disabled {
+    background-color: var(--color-background-green-light);
 }
