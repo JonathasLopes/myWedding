@@ -1,4 +1,4 @@
-import { IResponseInvites } from "@/interfaces/IResponseInvites";
+import { IResponseInvites } from "../interfaces/IResponseInvites";
 import { api } from "../configurations/Axios";
 
 const GetByName = async (name: string) => {
@@ -12,6 +12,30 @@ const GetByName = async (name: string) => {
     }
 }
 
+const ConfirmPresence = async (ids: string[]) => {
+    try {
+        const result = await api.put(`/ConfirmPresence`, { "ids": ids });
+        const response = await result.data;
+        return response;
+    }
+    catch (error: any) {
+        throw new Error(error.response.data);
+    }
+}
+
+const RemovePresence = async (ids: string[]) => {
+    try {
+        const result = await api.put(`/RemovePresence`, { "ids": ids });
+        const response = await result.data;
+        return response;
+    }
+    catch (error: any) {
+        throw new Error(error.response.data);
+    }
+}
+
 export {
-    GetByName
+    GetByName,
+    ConfirmPresence,
+    RemovePresence
 }

@@ -6,14 +6,34 @@ import { ReactComponent as Divisor2 } from '../../assets/img/divisor2.svg';
 import { calculateTimeLeft } from '../../helpers/CalculateTimeLeft';
 import CircleColor from '../../components/CircleColor/CircleColor';
 import GalleryPhotos from '../../components/GalleryPhotos/GalleryPhotos';
+import useLoading from '../../hooks/useLoading';
+import { toast } from 'react-toastify';
+import { SendMessage } from '../../apis/MessagesAPI';
+import Loading from '../../components/Loading/Loading';
 
 function LandingPage() {
+    const { startLoading, stopLoading, loading } = useLoading();
     const [days, setDays] = useState<number>(0);
     const [hours, setHours] = useState<number>(0);
     const [minutes, setMinutes] = useState<number>(0);
     const [seconds, setSeconds] = useState<number>(0);
     const [name, setName] = useState<string>("");
     const [message, setMessage] = useState<string>("");
+
+    async function SendMessageToCouple() {
+        startLoading();
+        try {
+            await SendMessage(name, message).then((resp) => {
+                setName("");
+                setMessage("");
+                toast.success(resp.message);
+            })
+        } catch (error: any) {
+            toast.error(error ? error.message : "Não foi possível enviar a mensagem, por favor, tente novamente mais tarde!");
+        } finally {
+            stopLoading();
+        }
+    }
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -29,6 +49,7 @@ function LandingPage() {
 
     return (
         <div className='container-landing'>
+            {loading && <Loading />}
             <div className="img-main">
                 <h1>Bianca & Jonathas</h1>
             </div>
@@ -53,10 +74,22 @@ function LandingPage() {
             </div>
             <div id="our-history-container" className='container-msg'>
                 <h3>Nossa História</h3>
-                <p>O grande dia está chegando e não poderíamos estar mais animados para compartilhar com a nossa família e amigos um dos dias mais especiais das nossas vidas!
+                <p>Nossa história começou de um jeito que nunca imaginamos. Nos conhecemos em um evento da igreja, sem suspeitar que aquele dia marcaria o início de algo tão especial. Era apenas mais um encontro, mas, no fundo, o destino já estava traçando nossos caminhos.
                     <br />
                     <br />
-                    Queremos muito sua presença neste dia tão importante com muita festa, amor e carinho em uma comemoração que irá nos marcar para sempre!</p>
+                    Uma semana depois, tivemos nosso primeiro encontro oficial. Fomos ao cinema assistir O Rei Leão. Já era a sexta vez que um de nós assistia à versão live-action, porque simplesmente ama esse filme. E, no meio de uma história que já conhecíamos de cor, uma nova história começou a ser escrita: nos olhamos e nos apaixonamos.
+                    <br />
+                    <br />
+                    Desde então, nos tornamos inseparáveis. Começamos a sair cada vez mais, compartilhamos sonhos e conquistas. Entre estudos e aprendizados, fomos nos ajudando e crescendo juntos — um ainda no ensino médio, o outro na faculdade. 
+                    <br />
+                    <br />
+                    Aos poucos, percebemos que o que sentíamos era muito mais do que apenas um sentimento passageiro. Queríamos construir uma vida juntos.
+                    <br />
+                    <br />
+                    Seis anos se passaram. Seis anos de amor, risadas, desafios e momentos inesquecíveis. E agora, estamos a poucos passos do dia mais esperado: o nosso casamento! O dia em que diremos “sim” para a nossa história, que começou de forma tão simples e hoje é um dos capítulos mais lindos de nossas vidas.
+                    <br />
+                    <br />
+                    E o que vem pela frente? Ainda não sabemos todos os detalhes, mas temos certeza de uma coisa: vamos continuar escrevendo essa história com amor, como sempre fizemos.</p>
             </div>
             <div className='colors-container'>
                 <Divisor1 className='divisor' />
@@ -96,14 +129,14 @@ function LandingPage() {
                 <div className='inputs-container'>
                     <div className='input-container'>
                         <label>Nome:</label>
-                        <input onChange={e => setName(e.target.value)} />
+                        <input value={name} onChange={e => setName(e.target.value)} />
                     </div>
                     <div className='input-container'>
                         <label>Mensagem:</label>
-                        <textarea onChange={e => setMessage(e.target.value)} />
+                        <textarea value={message} onChange={e => setMessage(e.target.value)} />
                     </div>
                 </div>
-                <button disabled={name === "" || message === ""} className='btn-send-message'>Enviar</button>
+                <button disabled={name === "" || message === ""} onClick={SendMessageToCouple} className='btn-send-message'>Enviar</button>
             </div>
         </div>
     )

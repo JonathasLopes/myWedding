@@ -1,0 +1,36 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+span:before {
+    width: 24px;
+    height: 24px;
+    border: 1.5px solid #f0f0f0;
+    content: "";
+    display: inline-block;
+    margin: 0 16px 0 0;
+    padding: 0;
+    vertical-align: top;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked+span:before {
+    background: var(--color-background-green);
+    border: 1.5px solid var(--color-background-green);
+    box-shadow: inset 0px 0px 0px 1px #fff;
+    content: "✔";
+    font-size: 16px;
+    color: var(--color-text-white);
+    text-align: center;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:focus+span::before {
+    outline: 0;
+}
+
+.label-container {
+    width: 100%;
+    padding: 27px 34px;
+    cursor: pointer;
+}
