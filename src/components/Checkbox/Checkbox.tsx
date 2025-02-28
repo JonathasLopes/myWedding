@@ -29,7 +29,7 @@ function Checkbox({ name, isChecked, id, selecteds, setSelecteds, disSelecteds, 
         let hasId = disSelecteds.findIndex(x => x === id) !== -1;
         if (isChecked && !hasId) {
             setDisSelecteds(prev => [...prev, id]);
-        } else if (hasId) {
+        } else if (hasId && isChecked) {
             let newSelecteds = disSelecteds.filter(x => x !== id);
             setDisSelecteds(newSelecteds);
         }
