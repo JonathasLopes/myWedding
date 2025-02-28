@@ -37,6 +37,7 @@ function Checkbox({ name, isChecked, id, selecteds, setSelecteds, disSelecteds, 
 
     useEffect(() => {
         addOrRemoveItemId();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [checked]);
 
     return (
