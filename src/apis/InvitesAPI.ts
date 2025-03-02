@@ -12,7 +12,7 @@ const GetByName = async (name: string) => {
     }
 }
 
-const ConfirmPresence = async (ids: string[]) => {
+const ConfirmPresence = async (ids: string) => {
     try {
         const result = await api.put(`/ConfirmPresence`, { "ids": ids });
         const response = await result.data;
@@ -23,14 +23,15 @@ const ConfirmPresence = async (ids: string[]) => {
     }
 }
 
-const RemovePresence = async (ids: string[]) => {
+const RemovePresence = async (ids: string) => {
     try {
         const result = await api.put(`/RemovePresence`, { "ids": ids });
+        console.log(result)
         const response = await result.data;
         return response;
     }
     catch (error: any) {
-        throw new Error(error.response.data);
+        throw new Error(error.data);
     }
 }
 

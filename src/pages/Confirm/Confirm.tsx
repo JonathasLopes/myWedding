@@ -1,6 +1,6 @@
 import './Confirm.css';
 import { useState } from 'react';
-import { ConfirmPresence, GetByName } from '../../apis/InvitesAPI';
+import { ConfirmPresence, GetByName, RemovePresence } from '../../apis/InvitesAPI';
 import { IFamilyResponse } from '../../interfaces/IResponseInvites';
 import { toast } from 'react-toastify';
 import useLoading from '../../hooks/useLoading';
@@ -14,12 +14,21 @@ function Confirm() {
     const [selecteds, setSelecteds] = useState<string[]>([]);
     const [disSelecteds, setDisSelecteds] = useState<string[]>([]);
 
+    async function callAPI() {
+        if (selecteds.length > 0) {
+            await confirmPresence();
+        }
+        if (disSelecteds.length > 0) {
+            await noConfirmPresence();
+        }
+    }
+
     async function getByName() {
         startLoading();
         try {
             await GetByName(search).then((resp) => {
                 setFamilies(resp.families);
-                if(resp.families.length === 0) {
+                if (resp.families.length === 0) {
                     toast.warning("Pesquisa sem resultados!");
                 }
             });
@@ -33,10 +42,26 @@ function Confirm() {
     async function confirmPresence() {
         startLoading();
         try {
-            await ConfirmPresence(selecteds).then((resp) => {
+            await ConfirmPresence(selecteds.join(",")).then((resp) => {
                 setSearch("");
                 setFamilies([]);
                 setSelecteds([]);
+                toast.success(resp.message);
+            });
+        } catch (error: any) {
+            toast.error(error ? error.message : "Não foi possível confirmar a presença, por favor, tente novamente mais tarde!");
+        } finally {
+            stopLoading();
+        }
+    }
+
+    async function noConfirmPresence() {
+        startLoading();
+        try {
+            await RemovePresence(disSelecteds.join(",")).then((resp) => {
+                setSearch("");
+                setFamilies([]);
+                setDisSelecteds([]);
                 toast.success(resp.message);
             });
         } catch (error: any) {
@@ -78,7 +103,7 @@ function Confirm() {
                                 )
                             })}
                         </div>
-                        <button onClick={confirmPresence} disabled={selecteds.length === 0} className='btn-search'>Confirmar Presença</button>
+                        <button onClick={callAPI} disabled={selecteds.length === 0 && disSelecteds.length === 0} className='btn-search'>Atualizar Presença</button>
                     </>
                 }
             </div>

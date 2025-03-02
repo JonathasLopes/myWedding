@@ -23,7 +23,7 @@ function Axios() {
     api.interceptors.response.use(response => {
         return response;
     }, (error: AxiosError) => {
-        return Promise.reject(error);
+        return Promise.reject(error.response);
     });
 
     return api;

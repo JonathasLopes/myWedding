@@ -62,8 +62,18 @@ function HamburgerNavbar() {
                                 <HashLink
                                     smooth
                                     onClick={() => { setActive(1); setIsOpen(false); }}
-                                    to="/#gifts-container"
+                                    to="/#our-history-container"
                                     className={`nav-link ${active === 1 && "active"}`}
+                                >
+                                    Nossa História
+                                </HashLink>
+                            </li>
+                            <li className="menu-option">
+                                <HashLink
+                                    smooth
+                                    onClick={() => { setActive(2); setIsOpen(false); }}
+                                    to="/#gifts-container"
+                                    className={`nav-link ${active === 2 && "active"}`}
                                 >
                                     Lista de Presentes
                                 </HashLink>
@@ -71,8 +81,8 @@ function HamburgerNavbar() {
                             <li className="menu-option">
                                 <Link
                                     to="/confirm"
-                                    onClick={() => { setActive(2); setIsOpen(false); }}
-                                    className={`nav-link ${active === 2 && "active"}`}
+                                    onClick={() => { setActive(3); setIsOpen(false); }}
+                                    className={`nav-link ${active === 3 && "active"}`}
                                 >
                                     Confirmar Presença
                                 </Link>

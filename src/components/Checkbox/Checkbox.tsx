@@ -13,6 +13,7 @@ interface ICheckboxProps {
 
 function Checkbox({ name, isChecked, id, selecteds, setSelecteds, disSelecteds, setDisSelecteds }: ICheckboxProps) {
     const [checked, setChecked] = useState<boolean>(isChecked);
+    const [isFirstRender, setIsFirstRender] = useState(true);
 
     function addOrRemoveItemId() {
         let hasId = selecteds.findIndex(x => x === id) !== -1;
@@ -27,7 +28,7 @@ function Checkbox({ name, isChecked, id, selecteds, setSelecteds, disSelecteds, 
 
     function addOrRemoveItemDisSelect() {
         let hasId = disSelecteds.findIndex(x => x === id) !== -1;
-        if (isChecked && !hasId) {
+        if (isChecked && !hasId && !checked) {
             setDisSelecteds(prev => [...prev, id]);
         } else if (hasId && isChecked) {
             let newSelecteds = disSelecteds.filter(x => x !== id);
@@ -36,7 +37,10 @@ function Checkbox({ name, isChecked, id, selecteds, setSelecteds, disSelecteds, 
     }
 
     useEffect(() => {
-        addOrRemoveItemId();
+        if (!isFirstRender)
+            addOrRemoveItemId();
+        else 
+            setIsFirstRender(false);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [checked]);
 
