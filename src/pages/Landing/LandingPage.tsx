@@ -10,6 +10,7 @@ import useLoading from '../../hooks/useLoading';
 import { toast } from 'react-toastify';
 import { SendMessage } from '../../apis/MessagesAPI';
 import Loading from '../../components/Loading/Loading';
+import PixQR from '../../components/PixQR/PixQR';
 
 function LandingPage() {
     const { startLoading, stopLoading, loading } = useLoading();
@@ -19,6 +20,11 @@ function LandingPage() {
     const [seconds, setSeconds] = useState<number>(0);
     const [name, setName] = useState<string>("");
     const [message, setMessage] = useState<string>("");
+    const [showQR, setShowQR] = useState<boolean>(false);
+
+    function showQRCode() {
+        setShowQR(true);
+    }
 
     async function SendMessageToCouple() {
         startLoading();
@@ -104,8 +110,10 @@ function LandingPage() {
                 </div>
                 <div id="gifts-container" className='gifts-container'>
                     <h3>Lista de Presentes</h3>
-                    <p>Clique no botão abaixo para acessar nossa lista de presentes!</p>
+                    <p>Clique no botão abaixo para acessar nossa lista de presentes! Ou se preferirem, podem também fazer um pix para nós!</p>
+                    <button className='btn-gifts' onClick={showQRCode}>Fazer Pix</button>
                     <a href='https://site.lejour.com.br/bihejoh2025' className='btn-gifts'>Ir para Lista de Presentes</a>
+                    {showQR && <PixQR setShowQR={setShowQR} />}
                     <p className='text-bible'>Eclesiastes 4:9-10 - Melhor é serem dois do que um, porque têm melhor recompensa pelo seu trabalho. Pois se um cair, o outro levanta o seu companheiro.</p>
                 </div>
                 <Divisor1 className='divisor inverted' />
