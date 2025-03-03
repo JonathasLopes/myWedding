@@ -189,7 +189,7 @@
 
     .card-counting-container {
         height: 130px;
-        margin: 0px 10px;
+        margin: 0px 6px;
     }
 
     .card-counting-container .divisor-card {
@@ -229,11 +229,11 @@
     }
 
     .member-container {
-        width: 390px;
+        width: 360px;
     }
 
     .member-container:not(:first-child) {
-        width: 380px;
+        width: 350px;
     }
 
     .label-container {
@@ -315,6 +315,14 @@
 
     .gallery-track {
         animation: slide 10s linear infinite;
+    }
+
+    .member-container {
+        width: 300px;
+    }
+
+    .member-container:not(:first-child) {
+        width: 290px;
     }
 
     .divisor {
