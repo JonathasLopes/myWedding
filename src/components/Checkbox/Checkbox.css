@@ -20,7 +20,7 @@ input[type="checkbox"]:checked+span:before {
     box-shadow: inset 0px 0px 0px 1px #fff;
     content: "✔";
     font-size: 16px;
-    color: var(--color-text-white);
+    color: var(--color-text-white) !important;
     text-align: center;
     border-radius: 50%;
 }

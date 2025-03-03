@@ -26,6 +26,7 @@
 
     .menu-button svg {
         stroke: var(--color-esmerald);
+        fill: var(--color-esmerald);
     }
 
     .card-counting-container {
