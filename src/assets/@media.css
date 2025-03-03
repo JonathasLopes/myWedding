@@ -18,6 +18,16 @@
         display: none;
     }
 
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-button svg {
+        stroke: var(--color-esmerald);
+    }
+
     .card-counting-container {
         padding: 5px 20px;
         height: 140px;
