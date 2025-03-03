@@ -21,6 +21,7 @@ input[type="checkbox"]:checked+span:before {
     content: "✔";
     font-size: 16px;
     color: var(--color-text-white) !important;
+    -webkit-text-fill-color: var(--color-text-white) !important;
     text-align: center;
     border-radius: 50%;
 }
