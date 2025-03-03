@@ -10,14 +10,62 @@
 
     .nav-wedding,
     .div-invisble,
+    .divisor-colors,
+    .container-infos .divisor-left,
+    .container-infos .divisor-right,
     .footer-container .logo-footer,
-    .footer-container .space-footer{
+    .footer-container .space-footer {
         display: none;
+    }
+
+    .card-counting-container {
+        padding: 5px 20px;
+        height: 140px;
+    }
+
+    .container-infos {
+        padding: 0px 100px;
+        max-width: 100%;
+    }
+
+    .colors-circle-container {
+        padding: 20px 0px;
+    }
+
+    .text-option,
+    .text-bible,
+    .colors-container p,
+    .container-msg p,
+    .container-invites p {
+        width: 100% !important;
+        max-width: 600px;
+    }
+
+    .colors-container p,
+    .text-bible {
+        text-align: center;
+    }
+
+    .card-counting-container .divisor-card {
+        width: 70px;
+    }
+
+    .card-counting-container .timer-card {
+        font-size: 25px;
+    }
+
+    .card-counting-container .moment-card {
+        font-size: 12px;
+    }
+
+    .map iframe {
+        width: 400px;
+        height: 250px;
     }
 
     .footer-container {
         justify-content: center;
-        padding: 5px 0px;
+        padding: 20px 0px;
     }
 
     .bar-horizontal {
@@ -49,7 +97,7 @@
     }
 
     .container-msg {
-        padding: 5px 10px 10px;
+        padding: 5px 0px 10px;
     }
 
     .img-secondary {
@@ -65,11 +113,30 @@
     .footer-container h4 {
         font-size: 24px;
     }
+
+    .inputs-container {
+        max-width: 600px;
+    }
+
+    .inputs-container,
+    .input-container,
+    .input-container input,
+    .input-container textarea {
+        width: 100%;
+    }
+
+    .gallery-track {
+        animation: slide 20s linear infinite;
+    }
 }
 
 @media (max-width: 425px) {
     .img-main {
         height: 400px;
+    }
+
+    .gallery-track {
+        animation: slide 15s linear infinite;
     }
 
     .bar-horizontal {
@@ -79,7 +146,8 @@
     .img-main h1 {
         font-size: 42px;
         padding: 10px;
-        margin-top: -35px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .container-infos {
@@ -90,14 +158,108 @@
         font-size: 35px;
     }
 
-    .container-infos p,
-    .container-msg p {
+    .text-option {
         font-size: 12px;
     }
 
+    .text-option {
+        max-width: 350px;
+        margin: 10px 0px;
+    }
+
+    .map iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+    .container-msg p,
+    .container-invites p,
+    .colors-container p {
+        font-size: 12px;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle-color-container span {
+        font-size: 12px;
+    }
+
+    .card-counting-container {
+        height: 130px;
+        margin: 0px 10px;
+    }
+
+    .card-counting-container .divisor-card {
+        width: 40px;
+    }
+
+    .card-counting-container .timer-card {
+        font-size: 22px;
+    }
+
+    .card-counting-container .moment-card {
+        font-size: 11px;
+    }
+
+    .divisor {
+        width: 150px;
+    }
+
+    .container-infos h4 {
+        margin: 10px 0px;
+    }
+
+    .cards-container {
+        margin: 15px 0px;
+    }
+
+    .container-invites p,
+    .container-invites input {
+        width: 100% !important;
+        max-width: 300px;
+    }
+
+    .btn-search {
+        padding: 10px 80px;
+        margin: 10px 0px;
+        font-size: 16px;
+    }
+
+    .member-container {
+        width: 390px;
+    }
+
+    .member-container:not(:first-child) {
+        width: 380px;
+    }
+
+    .label-container {
+        padding: 20px 28px;
+    }
+
     .container-infos h3,
-    .container-msg h3 {
+    .container-msg h3,
+    .container-invites h3,
+    .colors-container h3,
+    .gallery-photos h3,
+    .message-container h3 {
         font-size: 20px;
+    }
+
+    .colors-circle-container {
+        margin-top: 20px;
+    }
+
+    .container-msg h3 {
+        margin: 10px 0px;
+    }
+
+    .container-msg p,
+    .colors-container p {
+        max-width: 350px;
     }
 
     .container-msg {
@@ -114,10 +276,34 @@
     }
 
     .footer-container {
-        padding: 2px 0px;
+        padding: 12px 0px;
     }
 
     .footer-container h4 {
+        font-size: 18px;
+    }
+
+    .btn-gifts {
+        font-size: 18px;
+        margin: 15px 0px;
+    }
+
+    .inputs-container {
+        max-width: 350px;
+    }
+
+    .input-container label {
+        font-size: 14px;
+    }
+
+    .input-container input, 
+    .input-container textarea {
+        font-size: 14px;
+        max-width: 320px;
+    }
+
+    .btn-send-message {
+        padding: 12px 80px;
         font-size: 18px;
     }
 }
@@ -125,6 +311,14 @@
 @media (max-width: 375px) {
     .img-main {
         height: 380px;
+    }
+
+    .gallery-track {
+        animation: slide 10s linear infinite;
+    }
+
+    .divisor {
+        width: 100px;
     }
 
     .bar-horizontal {
@@ -141,9 +335,60 @@
         font-size: 10px;
     }
 
+    .divisor,
+    .container-infos h3,
+    .container-msg,
+    .colors-container h3,
+    .gallery-photos h3,
+    .message-container {
+        margin-top: -20px;
+    }
+
+    .input-container {
+        margin-top: 8px;
+    }
+
+    .inputs-container {
+        max-width: 300px;
+    }
+
+    .input-container input, .input-container textarea {
+        max-width: 270px;
+    }
+
+    .colors-circle-container {
+        margin-bottom: 40px;
+    }
+
+    .btn-send-message {
+        padding: 10px 70px;
+    }
+
     .container-infos h3,
     .container-msg h3 {
         font-size: 18px;
+    }
+
+    .container-infos h4 {
+        font-size: 14px;
+    }
+
+    .card-counting-container {
+        margin: 0px 5px;
+        height: 100px;
+        padding: 5px 15px;
+    }
+
+    .divisor-card {
+        width: 30px;
+    }
+
+    .card-counting-container .timer-card {
+        font-size: 20px;
+    }
+
+    .card-counting-container .moment-card {
+        font-size: 10px;
     }
 
     .img-secondary {

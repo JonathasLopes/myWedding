@@ -106,7 +106,7 @@ function LandingPage() {
                     <h3>Lista de Presentes</h3>
                     <p>Clique no botão abaixo para acessar nossa lista de presentes!</p>
                     <a href='https://site.lejour.com.br/bihejoh2025' className='btn-gifts'>Ir para Lista de Presentes</a>
-                    <p className='text-bible'><span>Eclesiastes 4:9-10 - </span>Melhor é serem dois do que um, porque têm melhor recompensa pelo seu trabalho. Pois se um cair, o outro levanta o seu companheiro.</p>
+                    <p className='text-bible'>Eclesiastes 4:9-10 - Melhor é serem dois do que um, porque têm melhor recompensa pelo seu trabalho. Pois se um cair, o outro levanta o seu companheiro.</p>
                 </div>
                 <Divisor1 className='divisor inverted' />
             </div>
