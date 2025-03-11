@@ -1,0 +1,29 @@
+.modal-pix-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background-white);
+    color: var(--color-text);
+    border-radius: 8px;
+    padding: 20px 60px;
+}
+
+.modal-pix-container h1 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.modal-pix-container img {
+    width: 200px;
+}
+
+.modal-pix-container h3{
+    font-weight: 200;
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+.modal-pix-container h4 {
+    margin: 5px 0px;
+}
