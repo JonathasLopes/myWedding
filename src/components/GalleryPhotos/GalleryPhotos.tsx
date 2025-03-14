@@ -8,6 +8,8 @@ interface IGalleryPhotosProps {
 
 function GalleryPhotos({ images, isReverse }: IGalleryPhotosProps) {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const displayedImages = isMobile ? [...images, '/images/Bianca-e-Jonathan-31.jpg'] : [...images, ...images];
 
     // Fecha a imagem quando clicar fora ou apertar "Esc"
     const closeImage = () => setSelectedImage(null);
@@ -22,10 +24,19 @@ function GalleryPhotos({ images, isReverse }: IGalleryPhotosProps) {
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, []);
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div className="gallery">
             <div className={`gallery-track ${isReverse ? "reverse" : ""}`}>
-                {[...images, ...images].map((src, index) => (
+                {displayedImages.map((src, index) => (
                     <img
                         key={index}
                         src={src}
