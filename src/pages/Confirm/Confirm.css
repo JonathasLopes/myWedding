@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0px;
+    padding: 30px 0px;
+    margin-top: 70px;
 }
 
 .container-invites h3 {
@@ -52,4 +53,17 @@
 .btn-search:disabled {
     background-color: var( --color-background-green-light-disabled);
     cursor: not-allowed;
+}
+
+.img-secondary {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background-img-gray);
+    background-image: url("/public/images/Bianca-e-Jonathan-31.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center calc(100% + 80px);
 }

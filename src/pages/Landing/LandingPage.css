@@ -14,10 +14,11 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-background-img-gray);
-    /* background-image: url(""); */
+    background-image: url("/public/images/Bianca-e-Jonathan-29.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 85%;
+    background-position: center 42%;
+    transform: scale(1.2);
 }
 
 .img-main h1 {
@@ -33,7 +34,6 @@
     color: var(--color-white);
     text-align: center;
     padding: 10px 0px;
-    background: var(--color-green-esmerald);
     width: 100%;
     max-width: 1300px;
     display: flex;
@@ -41,6 +41,16 @@
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.green-background {
+    background-color: var(--color-esmerald);
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-infos h1 {

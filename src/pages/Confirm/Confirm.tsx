@@ -74,9 +74,9 @@ function Confirm() {
     return (
         <div className="container-confirm">
             {loading && <Loading />}
-            <div className="img-main">
+            {/* <div className="img-main">
                 <h1>Bianca & Jonathas</h1>
-            </div>
+            </div> */}
             <div className='container-invites'>
                 <h3>Confirme sua presença!</h3>
                 {families.length === 0 ?
