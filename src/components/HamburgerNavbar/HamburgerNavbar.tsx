@@ -6,8 +6,12 @@ import { HashLink } from 'react-router-hash-link';
 import { motion } from "framer-motion";
 import "./HamburgerNavbar.css";
 
-function HamburgerNavbar() {
-    const [isOpen, setIsOpen] = useState<boolean>(false);
+interface IHamburgerNavbarProps {
+    setIsOpen: React.Dispatch<React.SetStateAction<boolean>>,
+    isOpen: boolean
+}
+
+function HamburgerNavbar({ isOpen, setIsOpen }: IHamburgerNavbarProps) {
     const [active, setActive] = useState<number>(0);
     const menuRef = useRef<HTMLDivElement | null>(null);
 
@@ -28,6 +32,7 @@ function HamburgerNavbar() {
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

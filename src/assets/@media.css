@@ -3,6 +3,10 @@
         height: 550px;
     }
 
+    .confirm-mobile {
+        display: block;
+    }
+
     .nav-menu {
         height: 72px;
         justify-content: space-between;

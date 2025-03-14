@@ -16,6 +16,12 @@ a {
     color: var(--color-text);
 }
 
+.confirm-mobile {
+    display: none;
+    color: var(--color-esmerald);
+    font-weight: 400;
+}
+
 .body-main {
     padding: 0px;
     margin: 0px;

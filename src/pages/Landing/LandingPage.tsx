@@ -101,8 +101,8 @@ function LandingPage() {
             </div>
             <div className='colors-container'>
                 <Divisor1 className='divisor' />
-                <h3>Cores Proibidas</h3>
-                <p>Não usar estas cores, pois serão cores que somente padrinhos, noivos e pais podem usar neste dia!</p>
+                <h3>Cores Reservadas</h3>
+                <p>Estas cores estão reservadas para o evento. Evite usá-las para não misturar com quem irá participar da cerimônia!</p>
                 <div className='colors-circle-container'>
                     <Divisor2 className='divisor-colors' />
                     <CircleColor color='marsala' title='Marsala' />
