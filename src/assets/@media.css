@@ -163,7 +163,7 @@
     }
 
     .img-secondary {
-        height: 250px;
+        height: 300px;
         background-position: center calc(100% + 50px);
     }
 }
@@ -184,7 +184,7 @@
     }
 
     .img-secondary {
-        height: 250px;
+        height: 320px;
         background-position: center calc(100% + 40px);
     }
 
@@ -388,7 +388,7 @@
     }
 
     .img-secondary {
-        height: 260px;
+        height: 320px;
         background-position: center calc(100% + 30px);
     }
 
@@ -453,7 +453,8 @@
     }
 
     .container-infos h3,
-    .container-msg h3 {
+    .container-msg h3,
+    .container-invites h3 {
         font-size: 18px;
     }
 

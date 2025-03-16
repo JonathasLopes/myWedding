@@ -17,7 +17,7 @@ function MainLayout() {
                 {!isOpen &&
                     <Link
                         to="/confirm"
-                        className="nav-link confirm-mobile"
+                        className="confirm-mobile"
                     >
                         Confirmar Presença
                     </Link>

@@ -13,6 +13,8 @@ function Confirm() {
     const [families, setFamilies] = useState<IFamilyResponse[]>([]);
     const [selecteds, setSelecteds] = useState<string[]>([]);
     const [disSelecteds, setDisSelecteds] = useState<string[]>([]);
+    const now = Date.now();
+    const stop = new Date("2025-06-20").getTime();
 
     async function callAPI() {
         if (selecteds.length > 0) {
@@ -82,8 +84,8 @@ function Confirm() {
                 {families.length === 0 ?
                     <>
                         <p>Para confirmar a sua presença no casamento só precisa escrever o seu nome e clicar em Pesquisar. Aparecerá o seu nome e só terá que dizer se estará ou não no casamento, além disso, você poderá já confirmar as pessoas que foram convidadas junto com você!</p>
-                        <input placeholder='Nome' value={search} onChange={e => setSearch(e.target.value)} />
-                        <button onClick={getByName} disabled={search === ""} className='btn-search'>Buscar</button>
+                        <input disabled={stop - now <= 0} placeholder='Nome' value={search} onChange={e => setSearch(e.target.value)} />
+                        {stop - now > 0 && <button onClick={getByName} disabled={search === ""} className='btn-search'>Buscar</button>}
                     </>
                     :
                     <>
