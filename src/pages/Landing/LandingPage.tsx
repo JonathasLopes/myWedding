@@ -85,7 +85,7 @@ function LandingPage() {
                 <p>Nossa história começou de um jeito que nunca imaginamos. Nos conhecemos em um evento da igreja, sem suspeitar que aquele dia marcaria o início de algo tão especial. Era apenas mais um encontro, mas, na verdade, Deus já tinha escrito nossa história.
                     <br />
                     <br />
-                    Uma semana depois, tivemos nosso primeiro encontro oficial. Fomos ao cinema assistir O Rei Leão. Já era a sexta vez que a Bih assistia à versão live-action, porque simplesmente ela ama esse filme. E, ali, uma nova história começou a ser escrita: nos olhamos e nos apaixonamos.
+                    Uma semana depois, tivemos nosso primeiro encontro oficial. Fomos ao cinema assistir O Rei Leão. Já era a sexta vez que um de nós assistia à versão live-action, porque, simplesmente, nós amamos esse filme. E, ali, uma nova história começou a ser escrita: nos olhamos e nos apaixonamos.
                     <br />
                     <br />
                     Desde então, nos tornamos inseparáveis. Começamos a sair cada vez mais, compartilhamos sonhos e conquistas. Entre estudos e aprendizados, fomos nos ajudando e crescendo juntos.
