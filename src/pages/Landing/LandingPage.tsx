@@ -122,9 +122,9 @@ function LandingPage() {
             </div>
             <div className='gallery-photos'>
                 <h3>Galeria de Fotos</h3>
+                <p>(Clique na imagem para ampliar)</p>
                 <GalleryPhotos
-                    isReverse={false}
-                    images={
+                    slides={
                         [
                             '/images/Bianca-e-Jonathan-36.jpg',
                             '/images/Bianca-e-Jonathan-40.jpg',
@@ -140,6 +140,7 @@ function LandingPage() {
                             '/images/Bianca-e-Jonathan-57.jpg',
                         ]
                     }
+                    options={{ loop: true }}
                 />
             </div>
 

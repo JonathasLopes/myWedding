@@ -7,6 +7,7 @@
     color: var(--color-text);
     border-radius: 8px;
     padding: 20px 60px;
+    cursor: default !important;
 }
 
 .modal-pix-container h1 {
@@ -26,4 +27,71 @@
 
 .modal-pix-container h4 {
     margin: 5px 0px;
+}
+
+.copy-paste-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.copy-paste-container > input {
+    height: 25px;
+    width: 100%;
+}
+
+.copy-text-btn-container {
+    position: relative;
+    margin-left: 10px;
+}
+
+.copy-text-btn-container > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: var(--color-background-img-gray);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .1s ease, color .1s ease;
+    padding: 10px;
+}
+
+.copy-text-btn-container > button:hover {
+    background-color: var(--color-background-img-gray-hover);
+}
+
+.copy-text-btn-container > button.active {
+    background-color: var(--color-background-green-medium);
+    color: var(--color-text-white);
+}
+
+.copy-text-btn-container > span {
+    width: 80px;
+    background-color: var(--color-background-green-medium);
+    color: var(--color-text-white);
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    position: absolute;
+}
+
+.copy-text-btn-container > span::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--color-background-green-medium) transparent;
 }

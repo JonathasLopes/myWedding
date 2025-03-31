@@ -300,3 +300,9 @@
     background-color: var( --color-background-green-light-disabled);
     cursor: not-allowed;
 }
+
+.gallery-photos {
+    text-align: center;
+    color: var(--color-text-white);
+    font-size: 13px;
+}
