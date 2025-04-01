@@ -45,9 +45,7 @@ function Confirm() {
         startLoading();
         try {
             await ConfirmPresence(selecteds.join(",")).then((resp) => {
-                setSearch("");
-                setFamilies([]);
-                setSelecteds([]);
+                clearSearch();
                 toast.success(resp.message);
             });
         } catch (error: any) {
@@ -61,9 +59,7 @@ function Confirm() {
         startLoading();
         try {
             await RemovePresence(disSelecteds.join(",")).then((resp) => {
-                setSearch("");
-                setFamilies([]);
-                setDisSelecteds([]);
+                clearSearch();
                 toast.success(resp.message);
             });
         } catch (error: any) {
@@ -71,6 +67,13 @@ function Confirm() {
         } finally {
             stopLoading();
         }
+    }
+
+    function clearSearch() {
+        setSearch("");
+        setFamilies([]);
+        setDisSelecteds([]);
+        setSelecteds([]);
     }
 
     return (
@@ -106,6 +109,7 @@ function Confirm() {
                             })}
                         </div>
                         <button onClick={callAPI} disabled={selecteds.length === 0 && disSelecteds.length === 0} className='btn-search'>Atualizar Presença</button>
+                        <button onClick={clearSearch} className='btn-new-search'>Nova Busca</button>
                     </>
                 }
             </div>

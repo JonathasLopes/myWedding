@@ -40,7 +40,7 @@ function PixQR({ setShowQR }: IPixQRProps) {
                     <h1>Nosso QR Code para realizar o PIX!</h1>
                     <img src="/images/qrcode.jpg" alt="Imagem Ampliada" className="modal-img" />
                     <div className="copy-paste-container">
-                        <input value={pixCopyPaste} />
+                        <input readOnly={true} value={pixCopyPaste} />
                         <div className="copy-text-btn-container">
                             <button className={showMessage ? "active": ""} onClick={copyText}><FaCopy /></button>
                             {showMessage && <span>Copiado!</span>}
