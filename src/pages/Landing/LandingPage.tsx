@@ -82,10 +82,11 @@ function LandingPage() {
             </div>
             <div id="our-history-container" className='container-msg'>
                 <h3>Nossa História</h3>
-                <p>Nossa história começou de um jeito que nunca imaginamos. Nos conhecemos em um evento da igreja, sem suspeitar que aquele dia marcaria o início de algo tão especial. Era apenas mais um encontro, mas, na verdade, Deus já tinha escrito nossa história.
+                <p>
+                    Nossa história começou de um jeito que nunca imaginamos. Nos conhecemos em um evento da igreja, sem suspeitar que aquele dia marcaria o início de algo tão especial. Era apenas mais um encontro, mas, na verdade, Deus já tinha escrito nossa história.
                     <br />
                     <br />
-                    Uma semana depois, tivemos nosso primeiro encontro oficial. Fomos ao cinema assistir O Rei Leão. Já era a sexta vez que um de nós assistia à versão live-action, porque, simplesmente, nós amamos esse filme. E, ali, uma nova história começou a ser escrita: nos olhamos e nos apaixonamos.
+                    Uma semana depois, tivemos nosso primeiro encontro oficial. Fomos ao cinema assistir O Rei Leão. Já era a sexta vez que um de nós assistia à versão live-action, porque simplesmente amamos esse filme. E, ali, uma nova história começou a ser escrita: nos olhamos e nos apaixonamos.
                     <br />
                     <br />
                     Desde então, nos tornamos inseparáveis. Começamos a sair cada vez mais, compartilhamos sonhos e conquistas. Entre estudos e aprendizados, fomos nos ajudando e crescendo juntos.
@@ -94,10 +95,11 @@ function LandingPage() {
                     Aos poucos, percebemos que o que sentíamos era muito mais do que apenas um sentimento passageiro. Queríamos construir uma vida juntos.
                     <br />
                     <br />
-                    Seis anos se passaram. Seis anos de amor, risadas, desafios e momentos inesquecíveis. E agora, estamos a poucos passos do dia mais esperado: o nosso casamento! O dia em que diremos “sim” para a nossa história, que começou de forma tão simples e hoje é um dos capítulos mais lindos de nossas vidas.
+                    Seis anos se passaram. Seis anos de amor, risadas, desafios e momentos inesquecíveis. E agora, estamos a poucos passos do dia mais esperado: o nosso casamento! O dia em que diremos “sim” para a nossa história, que começou de forma tão simples e hoje se tornou um dos capítulos mais lindos de nossas vidas.
                     <br />
                     <br />
-                    E o que vem pela frente? Ainda não sabemos todos os detalhes, mas temos certeza de uma coisa: vamos continuar vivendo essa história, que Deus escreveu, com amor, como sempre fizemos.</p>
+                    E o que vem pela frente? Ainda não sabemos todos os detalhes, mas temos certeza de uma coisa: vamos continuar vivendo essa história, que Deus escreveu, com amor – como sempre fizemos.
+                </p>
             </div>
             <div className='colors-container'>
                 <Divisor1 className='divisor' />
