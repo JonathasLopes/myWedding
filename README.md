@@ -1,4 +1,4 @@
-# MyWedding
+# 💍 MyWedding
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/JonathasLopes/myWedding)
 ![GitHub last commit](https://img.shields.io/github/last-commit/JonathasLopes/myWedding)
