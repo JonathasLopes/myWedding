@@ -1,0 +1,14 @@
+.message-bubble {
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px var(--color-shadow);
+    margin-bottom: 8px;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.name-date-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
