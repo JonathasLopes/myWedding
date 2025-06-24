@@ -14,7 +14,7 @@ function Confirm() {
     const [selecteds, setSelecteds] = useState<string[]>([]);
     const [disSelecteds, setDisSelecteds] = useState<string[]>([]);
     const now = Date.now();
-    const stop = new Date("2025-06-20").getTime();
+    const stop = new Date("2025-06-25").getTime();
 
     async function callAPI() {
         if (selecteds.length > 0) {
