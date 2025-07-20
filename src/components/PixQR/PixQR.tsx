@@ -9,7 +9,7 @@ interface IPixQRProps {
 function PixQR({ setShowQR }: IPixQRProps) {
     const [showMessage, setShowMessage] = useState<boolean>(false);
     const closeImage = () => setShowQR(false);
-    const pixCopyPaste = "00020126430014BR.GOV.BCB.PIX0121jon.athas@hotmail.com5204000053039865802BR5925JONATHAS MOREIRA AMORIM L6009SAO PAULO62250521hUbKfdvdHzWdsfihJmWNn6304D8E3";
+    const pixCopyPaste = "00020126580014BR.GOV.BCB.PIX0136bf1d0320-d66c-4abb-b360-ea36d38e9c315204000053039865802BR5925JONATHAS MOREIRA DE AMORI6009SAO PAULO62250521hcBNT8ntifHip5jJtLUia6304B65F";
 
     function copyText() {
         navigator.clipboard.writeText(pixCopyPaste);
